@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		C722135C26D874510006587A /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722135B26D874510006587A /* AlertItem.swift */; };
+		C722135F26D8852A0006587A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722135E26D8852A0006587A /* GameViewModel.swift */; };
+		C722136226D889C80006587A /* GameSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722136126D889C80006587A /* GameSquareView.swift */; };
+		C722136426D88ADE0006587A /* PlayerIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722136326D88ADE0006587A /* PlayerIndicator.swift */; };
+		C722136726D88D940006587A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722136626D88D940006587A /* Player.swift */; };
+		C722136926D88DAE0006587A /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722136826D88DAE0006587A /* Move.swift */; };
 		C7C31E3526D7417C0025500E /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C31E3426D7417C0025500E /* TicTacToeApp.swift */; };
-		C7C31E3726D7417C0025500E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C31E3626D7417C0025500E /* ContentView.swift */; };
+		C7C31E3726D7417C0025500E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C31E3626D7417C0025500E /* GameView.swift */; };
 		C7C31E3926D7418A0025500E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7C31E3826D7418A0025500E /* Assets.xcassets */; };
 		C7C31E3C26D7418A0025500E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7C31E3B26D7418A0025500E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C722135B26D874510006587A /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		C722135E26D8852A0006587A /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		C722136126D889C80006587A /* GameSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSquareView.swift; sourceTree = "<group>"; };
+		C722136326D88ADE0006587A /* PlayerIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerIndicator.swift; sourceTree = "<group>"; };
+		C722136626D88D940006587A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C722136826D88DAE0006587A /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		C7C31E3126D7417C0025500E /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C31E3426D7417C0025500E /* TicTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
-		C7C31E3626D7417C0025500E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C7C31E3626D7417C0025500E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		C7C31E3826D7418A0025500E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7C31E3B26D7418A0025500E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C7C31E3D26D7418A0025500E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +53,32 @@
 			path = Alerts;
 			sourceTree = "<group>";
 		};
+		C722135D26D8851A0006587A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C722135E26D8852A0006587A /* GameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C722136026D889B00006587A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C722136126D889C80006587A /* GameSquareView.swift */,
+				C722136326D88ADE0006587A /* PlayerIndicator.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C722136526D88D7A0006587A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C722136626D88D940006587A /* Player.swift */,
+				C722136826D88DAE0006587A /* Move.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C7C31E2826D7417C0025500E = {
 			isa = PBXGroup;
 			children = (
@@ -62,9 +98,12 @@
 		C7C31E3326D7417C0025500E /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				C722136526D88D7A0006587A /* Models */,
+				C722136026D889B00006587A /* Components */,
+				C722135D26D8851A0006587A /* ViewModels */,
 				C722135A26D874400006587A /* Alerts */,
 				C7C31E3426D7417C0025500E /* TicTacToeApp.swift */,
-				C7C31E3626D7417C0025500E /* ContentView.swift */,
+				C7C31E3626D7417C0025500E /* GameView.swift */,
 				C7C31E3826D7418A0025500E /* Assets.xcassets */,
 				C7C31E3D26D7418A0025500E /* Info.plist */,
 				C7C31E3A26D7418A0025500E /* Preview Content */,
@@ -149,9 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7C31E3726D7417C0025500E /* ContentView.swift in Sources */,
+				C722135F26D8852A0006587A /* GameViewModel.swift in Sources */,
+				C7C31E3726D7417C0025500E /* GameView.swift in Sources */,
+				C722136426D88ADE0006587A /* PlayerIndicator.swift in Sources */,
 				C722135C26D874510006587A /* AlertItem.swift in Sources */,
+				C722136926D88DAE0006587A /* Move.swift in Sources */,
+				C722136726D88D940006587A /* Player.swift in Sources */,
 				C7C31E3526D7417C0025500E /* TicTacToeApp.swift in Sources */,
+				C722136226D889C80006587A /* GameSquareView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
